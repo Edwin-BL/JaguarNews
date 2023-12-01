@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_general"
+            android:icon="@drawable/img_add_noticia"
+            android:title="@string/menu_general" />
+        <item
+            android:id="@+id/nav_bioquimica"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_bioquimica" />
+        <item
+            android:id="@+id/nav_gestion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_gestion" />
+        <item
+            android:id="@+id/nav_industrial"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_industrial" />
+        <item
+            android:id="@+id/nav_mecatronica"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_mecatronica" />
+        <item
+            android:id="@+id/nav_nanotecnologia"
+            android:icon="@drawable/nanotecnologia"
+            android:title="@string/menu_nanotecnologia" />
+        <item
+            android:id="@+id/nav_sistemas"
+            android:icon="@drawable/sistemas"
+            android:title="@string/menu_sistemas" />
+        <item
+            android:id="@+id/nav_tics"
+            android:icon="@drawable/sistemas"
+            android:title="@string/menu_tics" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@drawable/img_add_noticia"
+            android:title="@string/menu_noticias" />
+        <item
+            android:id="@+id/nav_usuarios"
+            android:icon="@drawable/usuario"
+            android:title="@string/menu_usuarios" />
+    </group>
+</menu>

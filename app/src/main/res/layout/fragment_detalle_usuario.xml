@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentsAdministrador.FragmentDetalleUsuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp"
+        android:background="@color/white"
+        tools:context=".DetalleProducto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detalleFotoUsuario"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/usuario"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/detalleNombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/detalleCorreoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/detalleNumControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numControl"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/detalleRolUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rol"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TableRow>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDetalleModificarU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/btnModify"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/cherry"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDetalleEliminarU"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/btnDelete"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/cherry"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

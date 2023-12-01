@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "125883732306",
+    "project_id": "jaguarnews-b42e3",
+    "storage_bucket": "jaguarnews-b42e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125883732306:android:7ef1a6a105cd31280b6a8b",
+        "android_client_info": {
+          "package_name": "mx.tecnm.cdhidalgo.jaguarnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125883732306-3rb8tm96bsk7b98otckfot9v63cout38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.tecnm.cdhidalgo.jaguarnews",
+            "certificate_hash": "3f59f21f9546237b6a5e8459071a05a35eab1edb"
+          }
+        },
+        {
+          "client_id": "125883732306-ua4u5hkpftq8cqrtltqpf5i7ej7qgkdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL76wNhG2mnGBPpt3UfgZC8oKN8pX0ZO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125883732306-ua4u5hkpftq8cqrtltqpf5i7ej7qgkdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

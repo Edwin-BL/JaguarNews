@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">JaguarNews</string>
+    <string name="title">Jaguar News</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Usuario</string>
+    <string name="nav_header_subtitle">example@dominio.mx</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_general">General</string>
+    <string name="menu_bioquimica">Bioquimica</string>
+    <string name="menu_gestion">Gestion</string>
+    <string name="menu_industrial">Industrial</string>
+    <string name="menu_mecatronica">Mecatronica</string>
+    <string name="menu_nanotecnologia">Nanotecnologia</string>
+    <string name="menu_sistemas">Sistemas</string>
+    <string name="menu_tics">TIC\'S</string>
+    <string name="menu_noticias">Administrar Noticias</string>
+    <string name="menu_usuarios">Administrar Usuarios</string>
+
+    <string name="email">Correo Electronico</string>
+    <string name="password">Constraseña</string>
+    <string name="login">Iniciar Sesion</string>
+    <string name="register">Registrarse</string>
+    <string name="name">Nombre</string>
+    <string name="lastName">Apellido Paterno</string>
+    <string name="mLastName">Apellido Materno</string>
+    <string name="numControl">LNNNNNNNN</string>
+    <string name="rol">Rol</string>
+    <string name="op1">General</string>
+    <string name="google">Iniciar con Google</string>
+    <string name="estudiante">Estudiante</string>
+    <string name="administrador">Administrador</string>
+
+    <string name="tittle_noticia">Titulo Noticia</string>
+    <string name="description_noticia">Descripcion Noticia</string>
+    <string name="fecha_noticia">00/00/0000, 00:00:00</string>
+
+    <string name="btnModify">Modificar</string>
+    <string name="btnDelete">Eliminar</string>
+    <string name="btnAgregarUsuario">Nuevo Usuario</string>
+    <string name="btnAgregarNoticia">Agregar Noticia</string>
+
+    <string name="Administrador">Activar Administrador</string>
+
+    <string name="titulo">Titulo</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="categoria">Categoria</string>
+
+    <string name="modificarN">Modificar Noticia</string>
+    <string name="modificarU">Modificar Usuario</string>
+
+    <string name="agregarN">Agregar Noticia</string>
+    <string name="agregarU">Agregar Usuario</string>
+
+    <string name="default_web_client_id">125883732306-3rb8tm96bsk7b98otckfot9v63cout38.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

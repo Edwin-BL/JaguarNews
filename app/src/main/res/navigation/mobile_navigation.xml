@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_general">
+
+    <fragment
+        android:id="@+id/nav_general"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.general.GeneralFragment"
+        android:label="@string/menu_general"
+        tools:layout="@layout/fragment_general" />
+
+    <fragment
+        android:id="@+id/nav_bioquimica"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.bioquimica.BioquimicaFragment"
+        android:label="@string/menu_bioquimica"
+        tools:layout="@layout/fragment_bioquimica" />
+
+    <fragment
+        android:id="@+id/nav_gestion"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.gestion.GestionFragment"
+        android:label="@string/menu_gestion"
+        tools:layout="@layout/fragment_gestion" />
+
+    <fragment
+        android:id="@+id/nav_industrial"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.industrial.IndustrialFragment"
+        android:label="@string/menu_industrial"
+        tools:layout="@layout/fragment_industrial" />
+
+    <fragment
+        android:id="@+id/nav_mecatronica"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.mecatronica.MecatronicaFragment"
+        android:label="@string/menu_mecatronica"
+        tools:layout="@layout/fragment_mecatronica" />
+
+    <fragment
+        android:id="@+id/nav_nanotecnologia"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.nanotecnologia.NanotecnologiaFragment"
+        android:label="@string/menu_nanotecnologia"
+        tools:layout="@layout/fragment_nanotecnologia" />
+
+    <fragment
+        android:id="@+id/nav_sistemas"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.sistemas.SistemasFragment"
+        android:label="@string/menu_sistemas"
+        tools:layout="@layout/fragment_sistemas" />
+
+    <fragment
+        android:id="@+id/nav_tics"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.tics.TicsFragment"
+        android:label="@string/menu_tics"
+        tools:layout="@layout/fragment_tics" />
+    <fragment
+        android:id="@+id/nav_noticias"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.noticias.NoticiasFragment"
+        android:label="@string/menu_noticias"
+        tools:layout="@layout/fragment_noticias" >
+        <action
+            android:id="@+id/action_nav_noticias_to_fragmentDetalleNoticia"
+            app:destination="@id/fragmentDetalleNoticia" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_usuarios"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.ui.usuarios.UsuariosFragment"
+        android:label="@string/menu_usuarios"
+        tools:layout="@layout/fragment_usuarios" >
+        <action
+            android:id="@+id/action_nav_usuarios_to_fragmentDetalleUsuario"
+            app:destination="@id/fragmentDetalleUsuario" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetalleNoticia"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.fragmentsAdministrador.FragmentDetalleNoticia"
+        android:label="@string/menu_noticias"
+        tools:layout="@layout/fragment_detalle_noticia" >
+        <action
+            android:id="@+id/action_fragmentDetalleNoticia_to_fragmentModificarNoticia"
+            app:destination="@id/fragmentModificarNoticia" />
+        <action
+            android:id="@+id/action_fragmentDetalleNoticia_to_nav_noticias"
+            app:destination="@id/nav_noticias" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetalleUsuario"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.fragmentsAdministrador.FragmentDetalleUsuario"
+        android:label="@string/menu_usuarios"
+        tools:layout="@layout/fragment_detalle_usuario" >
+        <action
+            android:id="@+id/action_fragmentDetalleUsuario_to_fragmentModificarUsuario"
+            app:destination="@id/fragmentModificarUsuario" />
+        <action
+            android:id="@+id/action_fragmentDetalleUsuario_to_nav_usuarios"
+            app:destination="@id/nav_usuarios" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentModificarNoticia"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.fragmentsAdministrador.FragmentModificarNoticia"
+        android:label="@string/modificarN"
+        tools:layout="@layout/fragment_modificar_noticia" >
+        <action
+            android:id="@+id/action_fragmentModificarNoticia_to_nav_noticias"
+            app:destination="@id/nav_noticias" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAgregarUsuario"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.fragmentsAdministrador.FragmentAgregarUsuario"
+        android:label="@string/agregarU"
+        tools:layout="@layout/fragment_agregar_usuario" >
+        <action
+            android:id="@+id/action_fragmentAgregarUsuario_to_nav_general"
+            app:destination="@id/nav_general" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentModificarUsuario"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.fragmentsAdministrador.FragmentModificarUsuario"
+        android:label="@string/modificarU"
+        tools:layout="@layout/fragment_modificar_usuario" >
+        <action
+            android:id="@+id/action_fragmentModificarUsuario_to_nav_usuarios"
+            app:destination="@id/nav_usuarios" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAgregarNoticia"
+        android:name="mx.tecnm.cdhidalgo.jaguarnews.fragmentsAdministrador.FragmentAgregarNoticia"
+        android:label="@string/agregarN"
+        tools:layout="@layout/fragment_agregar_noticia" >
+        <action
+            android:id="@+id/action_fragmentAgregarNoticia_to_nav_general"
+            app:destination="@id/nav_general" />
+    </fragment>
+
+</navigation>

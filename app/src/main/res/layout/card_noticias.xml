@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tituloNoticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tittle_noticia"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:background="@android:color/holo_red_dark"/>
+
+            <TextView
+                android:id="@+id/autorNoticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/gray_soft"
+                android:text="@string/email"/>
+
+
+            <ImageView
+                android:id="@+id/fotoNoticia"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/img_noticia"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/descripcionNoticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description_noticia"/>
+
+            <TextView
+                android:id="@+id/fechaNoticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/fecha_noticia"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
